@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
  <head>
-
+<link rel="stylesheet" href="style.css">
   <title>Manifestations</title>
  </head>
  <body>
+   <form action="/signout" method="GET">
+    <a id="buttonso" href="/signout">Sign Out</a>
+    
+  </form>
+   <h1 class="feed"> Manifestations</h1>
+      <% @mfsts.each do|mfst|%>
+     <h6> <%= mfst.manifest %> </h6>
+    <%end%>    
   
  </body>
 </html>
