@@ -10,13 +10,16 @@ class ApplicationController < Sinatra::Base
     set :session_secret, 'manifestation'
   end
   
+  
   get '/' do
     erb :index
   end
   
+  
   get '/login' do
     erb :login
   end
+  
   
   post '/login' do
     @user= User.find_by(:email => params[:email],:password => params[:password])
@@ -27,19 +30,32 @@ class ApplicationController < Sinatra::Base
       redirect '/feed'
    end
     
+    
+    get '/join'do
+    erb :join
+  end
+    
+  
+  post '/join' do
+    @user= User.new(:email => params[:email], :password => params[:password])
+    @user.save
+    redirect '/login'
+  end
+  
+    
     get '/feed' do
     @mfsts=Mfst.all
     erb :feed
   end
   
+  
     post '/new_mfst' do
     @user= User.find_by(:id =>  session[:user_id])
     @mfst= Mfst.new(:user_id => @user.id, :url => params[:url])
     @mfst.save
-   
-
     redirect '/feed'
   end
+  
     
   get '/signout' do
      session[:user_id]= nil
