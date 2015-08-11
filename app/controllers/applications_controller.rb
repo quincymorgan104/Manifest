@@ -18,4 +18,33 @@ class ApplicationController < Sinatra::Base
     erb :login
   end
   
+  post '/login' do
+    @user= User.find_by(:email => params[:email],:password => params[:password])
+    if @user==nil
+      redirect '/join'
+    else 
+      session[:user_id]=@user.id
+      redirect '/feed'
+   end
+    
+    get '/feed' do
+    @mfsts=Mfst.all
+    erb :feed
+  end
+  
+    post '/new_mfst' do
+    @user= User.find_by(:id =>  session[:user_id])
+    @mfst= Mfst.new(:user_id => @user.id, :url => params[:url])
+    @mfst.save
+   
+
+    redirect '/feed'
+  end
+    
+  get '/signout' do
+     session[:user_id]= nil
+    redirect '/'
+  end
+  
+  
 end
