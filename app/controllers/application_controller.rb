@@ -28,7 +28,7 @@ class ApplicationController < Sinatra::Base
     else 
       session[:user_id]=@user.id
       redirect '/feed'
-     end
+    end
    end
     
     
@@ -38,9 +38,16 @@ class ApplicationController < Sinatra::Base
     
   
   post '/join' do
-    @user= User.new(:email => params[:email], :password => params[:password])
-    @user.save
-    redirect '/login'
+    user= User.new(:email => params[:email])
+    user.password = params[:password]
+    if !user.valid?
+      @error="email is already taken, please try another"
+    else
+      user.save
+    end
+    
+    erb :index
+    
   end
   
     
