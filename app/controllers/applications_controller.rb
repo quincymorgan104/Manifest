@@ -9,4 +9,13 @@ class ApplicationController < Sinatra::Base
     enable :sessions
     set :session_secret, 'manifestation'
   end
+  
+  get '/' do
+    erb :index
+  end
+  
+  get '/login' do
+    erb :login
+  end
+  
 end
