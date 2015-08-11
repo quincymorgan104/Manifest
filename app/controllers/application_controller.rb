@@ -46,7 +46,7 @@ class ApplicationController < Sinatra::Base
       user.save
     end
     
-    erb :index
+    redirect '/login'
     
   end
   
