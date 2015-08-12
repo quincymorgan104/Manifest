@@ -1,6 +1,7 @@
 require "./config/environment"
 require "./app/models/mfst"
 require "./app/models/user"
+require "./app/models/like"
 
 class ApplicationController < Sinatra::Base
   configure do
@@ -110,5 +111,21 @@ class ApplicationController < Sinatra::Base
   
   #end of signout requests
 #----------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  
+  get '/like/:mfstid' do
+    @like = Like.new(:user_id => session[:user_id], :mfst_id => params[:mfstid])
+    @like.save
+    puts params[:mfstid]
+    @mfst = Mfst.find_by(:id => params[:mfstid])
+    puts @mfst.num_likes
+    @mfst.num_likes += 1
+    @mfst.save
+    redirect '/feed'
+  end
+  
+  
+  
+  
   
 end
