@@ -1,20 +1,40 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,500,600);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-body{
-  color: white;
+html, body{
+  height: 100%;
+  padding:0;
+  margin:0;
+/*   color: white;
   background: black;
   position:fixed;
   font-size: 5vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover; */
+  
+}
+.container{
+   height: 100% !important;
+   margin:0;
+    
+}
+
+div.container-index{
+    height: 100%;
+    margin:0;
+  background: url("/images/imgres.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   
 }
+
 div.title{
   font-family: 'Dosis', sans-serif;
-  font-size: 15vh;
+  font-size: 20vh;
   padding-left: 18vw;
   padding-right: 18vw;
   margin: auto;
@@ -50,6 +70,6 @@ a{
  text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
   transition:color 3s, font-size 3s;
-  font-size: 5vh;
+  font-size: 3vh;
   
 }
