@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,500,600);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body{
+  color: white;
+  background: black;
+  position:fixed;
+  font-size: 5vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+div.title{
+  font-family: 'Dosis', sans-serif;
+  font-size: 15vh;
+  padding-left: 18vw;
+  padding-right: 18vw;
+  margin: auto;
+  position: center center fixed;
+text-align:center;
+}
+div.motto{
+  padding-left: 40vw;
+  padding-right: 40vw;
+  padding-top:1vh;
+  margin: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  font-size: 2vmax;
+}
+footer{
+    padding-left: 40vw;
+  padding-right: 40vw;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+div.homebar{
+  padding-left: 30vw;
+  padding-right: 30vw;
+  
+}
+a#buttonso{
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+a{
+  color: white;
+ text-decoration: none;
+  font-family: 'Advent Pro', sans-serif;
+  transition:color 3s, font-size 3s;
+  font-size: 5vh;
+  
+}
