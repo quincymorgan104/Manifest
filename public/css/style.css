@@ -6,7 +6,7 @@ html, body{
   padding:0;
   margin:0;
   color: white;
-  background:#80B2FF; 
+  background:#80B2FF;
 }
 div.body {
    height: 100% !important;
@@ -19,7 +19,7 @@ div.body {
     
 }
 
-/* div.container-index{
+div.container-index{
   height: 100%;
   margin:0;
   background-color: white no-repeat center center fixed;
@@ -27,7 +27,7 @@ div.body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;  
-} */
+}
 
 div.title-motto {
   text-align: center;
@@ -64,31 +64,19 @@ div.homebar{
   text-align: center;
   
 }
-/* ________________________________link________________________________________________ */
-a.buttonso{
+a#buttonso{
   position: absolute;
+  top: 0px;
   right: 10px;
-  
-
-}
-a.buttonmfst{
-  top:0px;
-  position: absolute;
-  left: 10px;
- 
- 
-
 }
 a{
   color: white;
   text-decoration: none;
-  font-family: 'Doris', sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   transition:color 3s, font-size 3s;
   font-size: 3vh;
   
 }
-
-/* ________________________________button________________________________________________ */
 .button {
   
    border: 1px solid #ffffff; */
@@ -109,7 +97,7 @@ a{
    text-shadow: #bd7fbd 0 1px 0;
     color: #8ABDCB;
    font-size: 4vh;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Advent Pro', sans-serif;
    text-decoration: none;
    vertical-align: middle;
    }
@@ -157,7 +145,7 @@ h1.feed{
 
 
 
-video#bgvid {
+/* video#bgvid {
 position: fixed;
 top: 50%;
 left: 50%;
@@ -170,6 +158,6 @@ z-index: -100;
 transform: translateX(-50%) translateY(-50%);
 background: url(http://static-p.iuqo.com/media/home/home/video/cloud.mp4) no-repeat;
 background-size: cover;
-}
+} */
 
 
