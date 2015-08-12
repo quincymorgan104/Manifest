@@ -1,5 +1,6 @@
 class User< ActiveRecord::Base
   has_many :mfsts
+  has_many :likes
   
     include BCrypt
   
