@@ -6,7 +6,7 @@ html, body{
   padding:0;
   margin:0;
   color: white;
-  background:#80B2FF;
+  background:#80B2FF; 
 }
 div.body {
    height: 100% !important;
@@ -65,19 +65,31 @@ div.homebar{
   text-align: center;
   
 }
-a#buttonso{
+/* ________________________________link________________________________________________ */
+a.buttonso{
   position: absolute;
-  top: 0px;
   right: 10px;
+  
+
+}
+a.buttonmfst{
+  top:0px;
+  position: absolute;
+  left: 10px;
+ 
+ 
+
 }
 a{
   color: white;
   text-decoration: none;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Doris', sans-serif;
   transition:color 3s, font-size 3s;
   font-size: 3vh;
   
 }
+
+/* ________________________________button________________________________________________ */
 .button {
   
    border: 1px solid #ffffff; */
@@ -98,7 +110,7 @@ a{
    text-shadow: #bd7fbd 0 1px 0;
     color: #8ABDCB;
    font-size: 4vh;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
    text-decoration: none;
    vertical-align: middle;
    }
