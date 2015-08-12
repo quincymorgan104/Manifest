@@ -40,14 +40,15 @@ class ApplicationController < Sinatra::Base
   post '/join' do
     user= User.new(:email => params[:email])
     user.password = params[:password]
+    @error = ""
     if !user.valid?
       @error="email is already taken, please try another"
+      puts "error stuff"
+      erb :join
     else
       user.save
+      redirect '/login'
     end
-    
-    erb :index
-    
   end
   
     
