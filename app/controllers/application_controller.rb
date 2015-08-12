@@ -43,6 +43,7 @@ class ApplicationController < Sinatra::Base
     @error = ""
     if !user.valid?
       @error="email is already taken, please try another"
+      puts "error stuff"
       erb :join
     else
       user.save

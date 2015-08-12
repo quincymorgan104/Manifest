@@ -2,9 +2,10 @@
 <html>
  <head>
 <link rel="stylesheet" href="style.css">
-  <title>Join</title>
+  <title>Join <%=@error%></title>
  </head>
  <body>
+   <%=@error%>
        <form action="/join" method="post">
     
       
@@ -17,9 +18,9 @@
         <input type="submit" class="button"value="Join">
   <style type="text/css">
 
-    <%=@error%>   
+       
     
     </form>
-  
+    
  </body>
 </html>
