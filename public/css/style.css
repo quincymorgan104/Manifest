@@ -6,7 +6,20 @@ html, body{
   padding:0;
   margin:0;
   color: white;
-  background:#80B2FF;
+  
+/*   background:#80B2FF; */
+  position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(http://static-p.iuqo.com/media/home/home/video/cloud.mp4) repeat;
+background-size: cover;
 }
 div.body {
    height: 100% !important;
@@ -19,7 +32,7 @@ div.body {
     
 }
 
-div.container-index{
+/* div.container-index{
   height: 100%;
   margin:0;
   background-color: white no-repeat center center fixed;
@@ -27,7 +40,7 @@ div.container-index{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;  
-}
+} */
 
 div.title-motto {
   text-align: center;
@@ -145,7 +158,7 @@ h1.feed{
 
 
 
-/* video#bgvid {
+video#bgvid {
 position: fixed;
 top: 50%;
 left: 50%;
@@ -158,6 +171,6 @@ z-index: -100;
 transform: translateX(-50%) translateY(-50%);
 background: url(http://static-p.iuqo.com/media/home/home/video/cloud.mp4) no-repeat;
 background-size: cover;
-} */
+}
 
 
