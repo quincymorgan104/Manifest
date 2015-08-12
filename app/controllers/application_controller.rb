@@ -61,7 +61,7 @@ class ApplicationController < Sinatra::Base
   
     post '/new_mfst' do
     @user= User.find_by(:id =>  session[:user_id])
-    @mfst= Mfst.new(:user_id => @user.id, :url => params[:url])
+      @mfst= Mfst.new(:user_id => @user.id, :manifest => params[:manifest])
     @mfst.save
     redirect '/feed'
   end
