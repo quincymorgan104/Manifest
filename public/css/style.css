@@ -5,59 +5,62 @@ html, body{
   height: 100%;
   padding:0;
   margin:0;
-/*   color: white;
-  background: black;
-  position:fixed;
-  font-size: 5vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-  
 }
-.container{
+div.body {
    height: 100% !important;
    margin:0;
-    
-}
-
-div.container-index{
-    height: 100%;
-    margin:0;
-  background: url("/images/imgres.jpg") no-repeat center center fixed;
+  background-color: white no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
+    
 }
 
-div.title{
+div.container-index{
+  height: 100%;
+  margin:0;
+  background-color: white no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+div.title-motto {
+  text-align: center;
+  left: 20vw;
+  right: 20vw;
+  padding-top: 10%;
+}
+
+h1.title{
   font-family: 'Dosis', sans-serif;
-  font-size: 20vh;
-  padding-left: 18vw;
-  padding-right: 18vw;
-  margin: auto;
-  position: center center fixed;
-text-align:center;
+  font-size: 30vh;
+  text-align: center;
 }
-div.motto{
-  padding-left: 40vw;
-  padding-right: 40vw;
-  padding-top:1vh;
-  margin: auto;
-  font-family: 'Source Sans Pro', sans-serif;
 
+h2.motto{
+  text-align: center;
+  margin: auto;
   font-size: 2vmax;
+  font-family: 'Dosis', sans-serif;
 }
-footer{
-    padding-left: 40vw;
-  padding-right: 40vw;
+
+div.footer {
+  text-align: center;
+  left: 30vw;
+  right: 30vw;
+}
+p.footer{
+  position:fixed;
+  bottom: 0px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 div.homebar{
-  padding-left: 30vw;
-  padding-right: 30vw;
+/*   padding-left: vw;
+  padding-right: 30vw; */
+  text-align: center;
   
 }
 a#buttonso{
@@ -67,7 +70,7 @@ a#buttonso{
 }
 a{
   color: white;
- text-decoration: none;
+  text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
   transition:color 3s, font-size 3s;
   font-size: 3vh;
