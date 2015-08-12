@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html>
- <head>
-<link rel="stylesheet" href="./css/style.css">
+
   <title>Manifestations</title>
- </head>
- <body>
+
+
    <form action="/signout" method="GET">
     <a id="buttonso" href="/signout">Sign Out</a>
     
   </form>
    <h1 class="feed"> Manifestations</h1>
       <% @mfsts.each do|mfst|%>
-   <h6> <%=mfst.content%> </h6>
-   <a href="/like/<%=mfst.id%>"><button type="button" id="myButton">Like</button></a>
+  <div class ="mfst_words">
+    <h6> <%=mfst.content%>               <%=mfst.num_likes%> likes</h6>
+</div>
+   <a href="/like/<%=mfst.id%>"><button type="button" class="button">Like</button></a>
     <%end%>    
       <a id="buttonso" href="/new_mfst">New Manifestation</a>
- </body>
-</html>

@@ -5,6 +5,8 @@ html, body{
   height: 100%;
   padding:0;
   margin:0;
+  color: white;
+  background:#80B2FF;
 }
 div.body {
    height: 100% !important;
@@ -25,6 +27,7 @@ div.container-index{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; 
+  
 }
 
 div.title-motto {
@@ -47,19 +50,18 @@ h2.motto{
   font-family: 'Dosis', sans-serif;
 }
 
-div.footer {
-  text-align: center;
-  left: 30vw;
-  right: 30vw;
-}
+
 p.footer{
+   left: 30vw;
+  right: 30vw;
+  text-align: center;
   position:fixed;
   bottom: 0px;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1vmax;
 }
 div.homebar{
-/*   padding-left: vw;
-  padding-right: 30vw; */
+
   text-align: center;
   
 }
@@ -74,5 +76,70 @@ a{
   font-family: 'Advent Pro', sans-serif;
   transition:color 3s, font-size 3s;
   font-size: 3vh;
+  
+}
+.button {
+  
+   border: 1px solid #ffffff; */
+   background: #fafafa;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#fafafa));
+   background: -webkit-linear-gradient(top, #ffffff, #fafafa);
+   background: -moz-linear-gradient(top, #ffffff, #fafafa);
+   background: -ms-linear-gradient(top, #ffffff, #fafafa);
+   background: -o-linear-gradient(top, #ffffff, #fafafa);
+   background-image: -ms-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+   padding: 4px 8px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   border-radius: 30px; */
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #bd7fbd 0 1px 0;
+    color: #8ABDCB;
+   font-size: 4vh;
+  font-family: 'Advent Pro', sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border: 1px solid #ffffff;
+   text-shadow: #8feeff 0 1px 0;
+    background: #ffffff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+   background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+   background: -moz-linear-gradient(top, #ffffff, #ffffff);
+   background: -ms-linear-gradient(top, #ffffff, #ffffff);
+   background: -o-linear-gradient(top, #ffffff, #ffffff);
+   background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%); 
+   color: #8ABDCB;
+   }
+.button:active {
+   text-shadow: #ffff87 0 1px 0;
+    border: 1px solid #ffffff; 
+   background: #ffffff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+   background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+   background: -moz-linear-gradient(top, #ffffff, #ffffff);
+   background: -ms-linear-gradient(top, #ffffff, #ffffff);
+   background: -o-linear-gradient(top, #ffffff, #ffffff);
+   background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%); 
+   color: #8ABDCB;
+   }
+a:hover {
+  color: #8ABDCB;
+  text-decoration: none;
+  font-size: 3vh;
+  
+}
+}
+div.mfst_words{
+  color:white;
+  font-size: 5vh;
+}
+h1.feed{
+ font-family: 'Dosis', sans-serif;
+  color:white;
+   font-size: 10vh;
   
 }
