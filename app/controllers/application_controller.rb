@@ -114,14 +114,21 @@ class ApplicationController < Sinatra::Base
   
   
   get '/like/:mfstid' do
-    @like = Like.new(:user_id => session[:user_id], :mfst_id => params[:mfstid])
-    @like.save
-    puts params[:mfstid]
+
     @mfst = Mfst.find_by(:id => params[:mfstid])
-    puts @mfst.num_likes
-    @mfst.num_likes += 1
-    @mfst.save
-    redirect '/feed'
+    
+    if !Like.exist?(:user_id => session[:user_id])
+      @like = Like.new(:user_id => session[:user_id], :mfst_id => params[:mfstid])
+      @like.save
+      @mfst.num_likes += 1
+      @mfst.save
+      redirect '/feed'
+    else
+      @like = Like.find_by(:user_id => session[:user_id])
+      @like.destroy
+      @mfst.num_likes -= 1
+      @mfst.save
+    end
   end
   
   
