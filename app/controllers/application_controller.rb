@@ -10,11 +10,17 @@ class ApplicationController < Sinatra::Base
     set :session_secret, 'manifestation'
   end
   
+#----------------------------------------------------------------------------------------------------------------------------------------------------
+  #homepage requests start here
+  
   
   get '/' do
     erb :index
   end
-  
+
+  #end homepage requests
+#----------------------------------------------------------------------------------------------------------------------------------------------------
+  #login requests start here
   
   get '/login' do
     erb :login
@@ -32,7 +38,10 @@ class ApplicationController < Sinatra::Base
     end
    end
     
-    
+  #end login requests
+#----------------------------------------------------------------------------------------------------------------------------------------------------
+  #join requests start here
+  
   get '/join'do
     erb :join
   end
@@ -52,7 +61,10 @@ class ApplicationController < Sinatra::Base
     end
   end
   
-    
+  #end join requests
+#----------------------------------------------------------------------------------------------------------------------------------------------------
+  #feed requests start here  
+  
   get '/feed' do
     @mfsts=Mfst.all
     erb :feed
@@ -63,6 +75,10 @@ class ApplicationController < Sinatra::Base
     @mfst.save
     redirect '/feed'
   end
+  
+  #end feed requests
+#----------------------------------------------------------------------------------------------------------------------------------------------------  
+  #manifestation creation requests starts here
   
   get '/new_mfst' do
     erb :new_mfst
@@ -75,11 +91,16 @@ class ApplicationController < Sinatra::Base
     redirect '/feed'
   end
   
-    
+  #end of manifestation creation
+#----------------------------------------------------------------------------------------------------------------------------------------------------
+  #signout requests start here
+  
   get '/signout' do
     session[:user_id]= nil
     redirect '/'
   end
   
+  #end of signout requests
+#----------------------------------------------------------------------------------------------------------------------------------------------------
   
 end
