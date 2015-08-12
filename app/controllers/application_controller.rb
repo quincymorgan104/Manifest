@@ -53,22 +53,31 @@ class ApplicationController < Sinatra::Base
   end
   
     
-    get '/feed' do
+  get '/feed' do
     @mfsts=Mfst.all
     erb :feed
   end
   
+  post '/feed' do
+    @mfst= Mfst.new(:user_id => session[:user_id], :content => params[:content])
+    @mfst.save
+    redirect '/feed'
+  end
   
-    post '/new_mfst' do
+  get '/new_mfst' do
+    erb :new_mfst
+  end
+
+  post '/new_mfst' do
     @user= User.find_by(:id =>  session[:user_id])
-      @mfst= Mfst.new(:user_id => @user.id, :manifest => params[:manifest])
+    @mfst= Mfst.new(:user_id => @user.id, :manifest => params[:manifest])
     @mfst.save
     redirect '/feed'
   end
   
     
   get '/signout' do
-     session[:user_id]= nil
+    session[:user_id]= nil
     redirect '/'
   end
   
