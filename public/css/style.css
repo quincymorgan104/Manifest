@@ -86,12 +86,15 @@ a#buttonso{
 }
 
 }
+a.work{
+  color:white;
+
+}
 a{
   color: white;
   text-decoration: none;
-  font-family: 'Advent Pro', sans-serif;
   transition:color 3s, font-size 3s;
-  font-size: 3vh;
+  font-size: 4vh;
   font-family: 'Dosis', sans-serif;
   
 }
@@ -99,7 +102,7 @@ a{
 a:hover {
   color: #8ABDCB;
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 4vh;
   font-family: 'Dosis', sans-serif;
   
 }
