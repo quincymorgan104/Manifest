@@ -7,6 +7,7 @@ html, body{
   margin:0;
   color: white;
   background:#80B2FF; 
+    font-family: 'Dosis', sans-serif;
 }
 div.body {
    height: 100% !important;
@@ -69,6 +70,7 @@ div.homebar{
 a.buttonso{
   position: absolute;
   right: 10px;
+  font-family: 'Dosis', sans-serif;
   
 
 }
@@ -76,6 +78,7 @@ a.buttonmfst{
   top:0px;
   position: absolute;
   left: 10px;
+  font-family: 'Dosis', sans-serif;
  
  
 
@@ -86,6 +89,13 @@ a{
   font-family: 'Doris', sans-serif;
   transition:color 3s, font-size 3s;
   font-size: 3vh;
+  
+}
+a:hover {
+  color: #8ABDCB;
+  text-decoration: none;
+  font-size: 3vh;
+    font-family: 'Dosis', sans-serif;
   
 }
 
@@ -138,12 +148,14 @@ a{
    background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%); 
    color: #8ABDCB;
    }
-a:hover {
-  color: #8ABDCB;
-  text-decoration: none;
-  font-size: 3vh;
+.buttonlike{
+  color:white;
   
 }
+.buttonlike:hover {
+  color: red;
+}
+
 }
 div.mfst_words{
   color:white;
