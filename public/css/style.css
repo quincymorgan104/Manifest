@@ -46,6 +46,7 @@ h1.title{
 }
 
 h2.motto{
+  font-size:5vh;
   text-align: center;
   margin: auto;
   font-size: 2vmax;
@@ -102,7 +103,7 @@ a{
 a:hover {
   color: #8ABDCB;
   text-decoration: none;
-  font-size: 4vh;
+  font-size: 3vh;
   font-family: 'Dosis', sans-serif;
   
 }
