@@ -1,24 +1,30 @@
 
   <title>Manifestations</title>
 
-
+<div class="feedcontainer">
    <form action="/signout" method="GET">
      <%if session[:user_id] != nil%>
-     <a   class="buttonso" href="/signout">Sign Out</a>
+     <a   class="signoutbutton" href="/signout">Sign Out</a>
      <%puts "signout"%>
      <%else%>
-     <a class="buttonso" href="/login">Login</a>
+     <a class="signoutbutton" href="/login">Login</a>
      <%puts "login"%>
      <%end%>
      
+     
     
   </form>
+
+<div class="feedcenter">
    <h1 class="feed"> Manifestations</h1>
       <% @mfsts.each do|mfst|%>
   <div class ="mfst_words">
-    <h6> <%=mfst.content%> <%=mfst.num_likes%> likes</h6>
-</div>
-   <a href="/like/<%=mfst.id%>"><button id="buttonlike" type="button" class="button">♥</button></a>
-   <a href="/comment/<%=mfst.id%>"><button id="buttonlike" type="button" class="button">Comment</button></a>
+    <h6 id="mfstwords"> <%=mfst.content%>               <%=mfst.num_likes%> likes</h6>
+    
+
+   <a href="/like/<%=mfst.id%>"><button id="like" type="button" class="button">♥</button></a>
     <%end%>    
-      <a class="buttonmfst" href="/new_mfst">New Manifestation</a>
+ </div>   
+</div>
+      <a class="buttonmfst" href="/new_mfst">New Manifestation</a>|<a class="buttonme" href="/me">Me</a>
+</div>
