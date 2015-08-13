@@ -139,9 +139,8 @@ class ApplicationController < Sinatra::Base
   
   
   get '/comment/:mfstid' do
-    
-    
-    
+    @mfst_id = params[:mfstid]
+    erb :comment
   end
   
   
