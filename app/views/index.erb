@@ -3,14 +3,14 @@
 <div class="container-index">
 <div class="homebar"> 
   <form action="/signout" method="GET">
-     <a href="/about">About</a>  |  
-  <a href="/feed">Manifestations</a>  |
+     <a class="work" href="/about">About</a>  |  
+  <a class="work" href="/feed">Manifestations</a>  |
      <%if session[:user_id] != nil%>
      
-     <a href="/signout">Sign Out</a>
+     <a class="work"href="/signout">Sign Out</a>
      <%puts "signout"%>
      <%else%>
-     <a href="/login">Login</a>
+     <a class="work" href="/login">Login</a>
   
      <%puts "login"%>
     <%end%>
