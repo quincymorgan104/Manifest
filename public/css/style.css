@@ -8,6 +8,20 @@ html, body{
   color: white;
   background:#80B2FF; 
     font-family: 'Dosis', sans-serif;
+  
+/*   background:#80B2FF; */
+  position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(http://static-p.iuqo.com/media/home/home/video/cloud.mp4) repeat;
+background-size: cover;
 }
 div.body {
    height: 100% !important;
@@ -20,16 +34,15 @@ div.body {
     
 }
 
-div.container-index{
+/* div.container-index{
   height: 100%;
   margin:0;
   background-color: white no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; 
-  
-}
+  background-size: cover;  
+} */
 
 div.title-motto {
   text-align: center;
@@ -66,10 +79,11 @@ div.homebar{
   text-align: center;
   
 }
-/* ________________________________link________________________________________________ */
-a.buttonso{
+a#buttonso{
   position: absolute;
+  top: 0px;
   right: 10px;
+<<<<<<< HEAD
   font-family: 'Dosis', sans-serif;
   
 
@@ -82,15 +96,17 @@ a.buttonmfst{
  
  
 
+
 }
 a{
   color: white;
   text-decoration: none;
-  font-family: 'Doris', sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   transition:color 3s, font-size 3s;
   font-size: 3vh;
   
 }
+<<<<<<< HEAD
 a:hover {
   color: #8ABDCB;
   text-decoration: none;
@@ -100,6 +116,8 @@ a:hover {
 }
 
 /* ________________________________button________________________________________________ */
+=======
+>>>>>>> eabd68075ef7dd0eafec9fa619bd457be02b47d7
 .button {
   
    border: 1px solid #ffffff; */
@@ -120,7 +138,7 @@ a:hover {
    text-shadow: #bd7fbd 0 1px 0;
     color: #8ABDCB;
    font-size: 4vh;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Advent Pro', sans-serif;
    text-decoration: none;
    vertical-align: middle;
    }
@@ -166,5 +184,23 @@ h1.feed{
   color:white;
    font-size: 10vh;
   text-align: center;
-  
 }
+
+
+
+video#bgvid {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(http://static-p.iuqo.com/media/home/home/video/cloud.mp4) no-repeat;
+background-size: cover;
+}
+
+
