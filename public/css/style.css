@@ -67,7 +67,7 @@ p.footer{
 }
 div.homebar{
  
-  
+
 
   text-align: center;
   
@@ -85,10 +85,6 @@ a#buttonso{
 
 }
 
- 
- 
-
-
 }
 a{
   color: white;
@@ -104,7 +100,7 @@ a:hover {
   color: #8ABDCB;
   text-decoration: none;
   font-size: 3vh;
-    font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', sans-serif;
   
 }
 
@@ -196,10 +192,10 @@ a.buttonmfst:hover{
 
 
 a.buttonme{
-   color:white;
+  color:white;
   top:0px;
   position: absolute;
-  left: 270px;
+  left: 190~px;
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
@@ -221,9 +217,7 @@ div.feedcenter{
  
  
 }
-div.feedcontainer{
-padding-bottom:25px;
-}
+
 h6#mfstwords{
   font-size: 9vh;
 }
@@ -243,30 +237,42 @@ border-radius: 5px;
   border: 2px solid transparent;
   background: #3498DB;
   color: #ffffff;
-  font-size: 16px;
-  line-height: 25px;
-  padding: 10px 0;
+  font-size: 4vh;
+  line-height: 5vh;
+  padding: 1vh ;
   text-decoration: none;
   text-shadow: none;
-  border-radius: 3px;
+  border-radius: 2vh;
   box-shadow: none;
   transition: 0.25s;
   display: block;
-  width: 250px;
+  width: 15vw;
   margin: 0 auto;
 }
 
 .btn:hover {
   background-color: #2980B9;
 }
+h1#login{
+  font-size:14vh;
+}
 .login {
-margin: 20px auto;
-width: 300px;
+margin: 5vh  auto;
+width: 20vw;
 }
 h1.logintext{
   font-size:3vh;
 }
 
 div.login-button {
-  padding-top:10px;
+  text-align:center;
+  float:center;
+  padding-top:5vh;
+  width: 15vw;
+/*   padding-left: 5vh; */
+}
+input#email{
+  width: 13vw;
+  height: 8vh;
+  font-size: 6vh;
 }
