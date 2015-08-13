@@ -231,10 +231,14 @@ h6#mfstwords{
 .login-screen {
   color: #858585;
 background-color: #FFF;
-padding: 20px;
-border-radius: 5px;
-  float:center;
+  width: 25vw;
+  height: 70vh;
+/* padding: 10vh 10vw;
+   */
+border-radius: 5vh;
+
   text-align: center;
+  
    
 }
 .btn {
@@ -242,8 +246,8 @@ border-radius: 5px;
   background: #3498DB;
   color: #ffffff;
   font-size: 4vh;
-  line-height: 5vh;
-  padding: 1vh ;
+/*   line-height: 5vh; */
+/*   padding: 1vh ; */
   text-decoration: none;
   text-shadow: none;
   border-radius: 2vh;
@@ -252,31 +256,51 @@ border-radius: 5px;
   display: block;
   width: 15vw;
   margin: 0 auto;
+  float:center;
 }
 
 .btn:hover {
   background-color: #2980B9;
 }
 h1#login{
-  font-size:14vh;
+  font-size:6vmax;
 }
 .login {
+/*  padding-right:5vw; */
 margin: 5vh  auto;
-width: 20vw;
+width: 25vw;
 }
 h1.logintext{
-  font-size:3vh;
+  font-size:1vmax;
 }
 
 div.login-button {
   text-align:center;
   float:center;
   padding-top:5vh;
-  width: 15vw;
-/*   padding-left: 5vh; */
+  width: 13.5vw;
+  padding-left: 10vw;
+
+
+  
 }
 input#email{
   width: 13vw;
   height: 8vh;
+
   font-size: 6vh;
 }
+
+  font-size: 2vmax;
+}
+a.join{
+  color:#858585;
+  font-size:1.5vmax;
+}
+a.join:hover{
+color:#80B2FF;
+}
+h5.signupline{
+  font-size:1.5vmax;
+}
+
