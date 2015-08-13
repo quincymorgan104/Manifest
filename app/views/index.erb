@@ -1,14 +1,17 @@
-<title>Welcome to Manifest</title>
+<title>Welcome to Manifesto</title>
 
 <div class="container-index">
- <p><div class="homebar">  <a href="/about">About</a>  |  
-  <a href="/feed">Manifestations</a>  |
+<div class="homebar"> 
   <form action="/signout" method="GET">
+     <a href="/about">About</a>  |  
+  <a href="/feed">Manifestations</a>  |
      <%if session[:user_id] != nil%>
+     
      <a class="buttonso" href="/signout">Sign Out</a>
      <%puts "signout"%>
      <%else%>
      <a class="buttonso" href="/login">Login</a>
+  
      <%puts "login"%>
     <%end%>
      
@@ -16,12 +19,12 @@
   </form>
 
    
-  </p>
+  
 
  
 
 <div class="title-motto">
-  <h1 class="title"> Manifest </h1>
+  <h1 class="title"> Manifesto </h1>
   <h2 class="motto">"Insert Motto Here"</h2>
 
 <!-- <video controls loop id="bgvid" autoplay>
@@ -29,7 +32,7 @@
   <source src="movie.ogg" type="video/ogg">
 </video> -->
   </div>
-</div>
+
 
 
 
