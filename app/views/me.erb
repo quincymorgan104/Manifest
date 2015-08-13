@@ -9,7 +9,9 @@
    <%Mfst.where(user_id: session[:user_id]).find_each do |x|%>
    <%=x.content%>
    <br>
-   <%=Comment.where(mfst_id: x.id)%>
+   <%Comment.where(mfst_id: x.id).find_each do |y|%>
+   <%=y.content%>
+   <%end%>
    <%end%>
    
    
