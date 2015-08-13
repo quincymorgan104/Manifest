@@ -6,7 +6,14 @@
  </head>
  <body>
   <form action="/signout" method="GET">
-    <a id="buttonso" href="/signout">Sign Out</a>
+     <%if session[:user_id] != nil%>
+     <a class="buttonso" href="/signout">Sign Out</a>
+     <%puts "signout"%>
+     <%else%>
+     <a class="buttonso" href="/login">Login</a>
+     <%puts "login"%>
+     <%end%>
+     
     
   </form>
  </body>

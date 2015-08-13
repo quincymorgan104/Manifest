@@ -6,22 +6,12 @@ html, body{
   padding:0;
   margin:0;
   color: white;
-  background:#80B2FF; 
+
     font-family: 'Dosis', sans-serif;
   
-/*   background:#80B2FF; */
-  position: fixed;
-top: 50%;
-left: 50%;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: -100;
--webkit-transform: translateX(-50%) translateY(-50%);
-transform: translateX(-50%) translateY(-50%);
-background: url(http://static-p.iuqo.com/media/home/home/video/cloud.mp4) repeat;
-background-size: cover;
+  background:#80B2FF;
+ 
+
 }
 div.body {
    height: 100% !important;
@@ -75,15 +65,20 @@ p.footer{
   font-size: 1vmax;
 }
 div.homebar{
+ 
+  
 
   text-align: center;
+  
+/*   white-space: nowrap; */
+
   
 }
 a#buttonso{
   position: absolute;
   top: 0px;
   right: 10px;
-<<<<<<< HEAD
+
   font-family: 'Dosis', sans-serif;
   
 
@@ -104,6 +99,7 @@ a{
   font-family: 'Advent Pro', sans-serif;
   transition:color 3s, font-size 3s;
   font-size: 3vh;
+  font-family: 'Dosis', sans-serif;
   
 }
 

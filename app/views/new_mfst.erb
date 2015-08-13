@@ -5,8 +5,15 @@
   <title>New Manifest</title>
  </head>
  <body>
-   <form action="/signout" method="GET">
-    <a id="buttonso" href="/signout">Sign Out</a>
+    <form action="/signout" method="GET">
+     <%if session[:user_id] != nil%>
+     <a class="buttonso" href="/signout">Sign Out</a>
+     <%puts "signout"%>
+     <%else%>
+     <a class="buttonso" href="/login">Login</a>
+     <%puts "login"%>
+     <%end%>
+     
     
   </form>
    <form action="/feed" method="post">
