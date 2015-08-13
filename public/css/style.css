@@ -67,7 +67,7 @@ p.footer{
 }
 div.homebar{
  
-  
+
 
   text-align: center;
   
@@ -195,7 +195,7 @@ a.buttonme{
   color:white;
   top:0px;
   position: absolute;
-  left: 190px;
+  left: 190~px;
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
@@ -217,9 +217,7 @@ div.feedcenter{
  
  
 }
-div.feedcontainer{
-padding-bottom:25px;
-}
+
 h6#mfstwords{
   font-size: 9vh;
 }
