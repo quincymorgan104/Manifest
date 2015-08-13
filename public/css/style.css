@@ -231,10 +231,14 @@ h6#mfstwords{
 .login-screen {
   color: #858585;
 background-color: #FFF;
-padding: 10vh;
+  width: 25vw;
+  height: 70vh;
+/* padding: 10vh 10vw;
+   */
 border-radius: 5vh;
-  float:center;
+
   text-align: center;
+  
    
 }
 .btn {
@@ -242,8 +246,8 @@ border-radius: 5vh;
   background: #3498DB;
   color: #ffffff;
   font-size: 4vh;
-  line-height: 5vh;
-  padding: 1vh ;
+/*   line-height: 5vh; */
+/*   padding: 1vh ; */
   text-decoration: none;
   text-shadow: none;
   border-radius: 2vh;
@@ -252,6 +256,7 @@ border-radius: 5vh;
   display: block;
   width: 15vw;
   margin: 0 auto;
+  float:center;
 }
 
 .btn:hover {
@@ -261,9 +266,9 @@ h1#login{
   font-size:6vmax;
 }
 .login {
- 
+/*  padding-right:5vw; */
 margin: 5vh  auto;
-width: 20vw;
+width: 25vw;
 }
 h1.logintext{
   font-size:1vmax;
@@ -273,9 +278,10 @@ div.login-button {
   text-align:center;
   float:center;
   padding-top:5vh;
-  width: 13vw;
-  padding-left: .5vh;
-  padding-right: 10vh;
+  width: 13.5vw;
+  padding-left: 10vw;
+
+
   
 }
 input#email{

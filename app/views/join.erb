@@ -1,9 +1,43 @@
-<!DOCTYPE html>
-<html>
- <head>
-<link rel="stylesheet" href="./css/style.css">
+<title>Join <%=@error%></title>
+<%=@error%>
+<div class="container-login">
+  	<div class="login">
+  <div class="login-screen">
+       <form  action="/join" method="post">
+   <h1 id="login"><strong>Login</strong></h1><br>
+   
+        <input id="email" type="text" name="email"placeholder="Email">
+       <br>
+   
+       
+       <br>
+      
+        <input id="email" type="password" name="password"placeholder="Password">
+         <div class="login-button">
+           <input type="submit" class="btn btn-primary btn-large btn-block"value="Login">
+         </div>
+         
+  </form>
+  </div>
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <title>Join <%=@error%></title>
- </head>
+
  <body>
    <%=@error%>
        <form action="/join" method="post">
