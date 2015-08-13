@@ -231,8 +231,8 @@ h6#mfstwords{
 .login-screen {
   color: #858585;
 background-color: #FFF;
-padding: 20px;
-border-radius: 5px;
+padding: 10vh;
+border-radius: 5vh;
   float:center;
   text-align: center;
    
@@ -258,25 +258,38 @@ border-radius: 5px;
   background-color: #2980B9;
 }
 h1#login{
-  font-size:14vh;
+  font-size:6vmax;
 }
 .login {
+ 
 margin: 5vh  auto;
 width: 20vw;
 }
 h1.logintext{
-  font-size:3vh;
+  font-size:1vmax;
 }
 
 div.login-button {
   text-align:center;
   float:center;
   padding-top:5vh;
-  width: 15vw;
-/*   padding-left: 5vh; */
+  width: 13vw;
+  padding-left: .5vh;
+  padding-right: 10vh;
+  
 }
 input#email{
   width: 13vw;
   height: 8vh;
-  font-size: 6vh;
+  font-size: 2vmax;
+}
+a.join{
+  color:#858585;
+  font-size:1.5vmax;
+}
+a.join:hover{
+color:#80B2FF;
+}
+h5.signupline{
+  font-size:1.5vmax;
 }
