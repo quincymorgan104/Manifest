@@ -6,22 +6,12 @@ html, body{
   padding:0;
   margin:0;
   color: white;
-  background:#80B2FF; 
+  background-color:#80B2FF; 
     font-family: 'Dosis', sans-serif;
+  text-align:center;
   
-/*   background:#80B2FF; */
-  position: fixed;
-top: 50%;
-left: 50%;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: -100;
--webkit-transform: translateX(-50%) translateY(-50%);
-transform: translateX(-50%) translateY(-50%);
-background: url(http://static-p.iuqo.com/media/home/home/video/cloud.mp4) repeat;
-background-size: cover;
+
+
 }
 div.body {
    height: 100% !important;
@@ -34,15 +24,19 @@ div.body {
     
 }
 
-/* div.container-index{
-  height: 100%;
-  margin:0;
-  background-color: white no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;  
-} */
+div.container-index{
+/* top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(http://static-p.iuqo.com/media/home/home/video/cloud.mp4) repeat;
+background-size: cover;  */
+} 
 
 div.title-motto {
   text-align: center;
@@ -83,7 +77,7 @@ a#buttonso{
   position: absolute;
   top: 0px;
   right: 10px;
-<<<<<<< HEAD
+
   font-family: 'Dosis', sans-serif;
   
 
@@ -106,7 +100,7 @@ a{
   font-size: 3vh;
   
 }
-<<<<<<< HEAD
+
 a:hover {
   color: #8ABDCB;
   text-decoration: none;
@@ -116,8 +110,7 @@ a:hover {
 }
 
 /* ________________________________button________________________________________________ */
-=======
->>>>>>> eabd68075ef7dd0eafec9fa619bd457be02b47d7
+
 .button {
   
    border: 1px solid #ffffff; */
@@ -188,7 +181,7 @@ h1.feed{
 
 
 
-video#bgvid {
+/* video#bgvid {
 position: fixed;
 top: 50%;
 left: 50%;
@@ -203,4 +196,4 @@ background: url(http://static-p.iuqo.com/media/home/home/video/cloud.mp4) no-rep
 background-size: cover;
 }
 
-
+ */
