@@ -76,7 +76,7 @@ class ApplicationController < Sinatra::Base
   #feed requests start here  
   
   get '/feed' do
-    @mfsts=Mfst.all
+    @mfsts=Mfst.all.reverse
     erb :feed
   end
   

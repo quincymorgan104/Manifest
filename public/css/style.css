@@ -110,31 +110,23 @@ a:hover {
 
 
 
-button#like{
-   border: none;
- background-color: Transparent;
-  outline: none;
-    color: white;
-  font-size: 5vh;
+
+
+h6#like{
+   color:grey;
+  font-size: 2vh;
   
 }
-button#like:hover {
-  color: red;
-   border: none;
- background-color: Transparent;
-  outline: none;
-    font-size: 5vh;
-}
 
-}
 div.mfst_words{
   color:white;
   font-size: 10vh;
+
 }
 h1.feed{
  font-family: 'Dosis', sans-serif;
   color:white;
-   font-size: 20vh;
+   font-size: 23vh;
   text-align: center;
     background-color:#80B2FF;
   padding-bottom: 3px;
@@ -157,11 +149,45 @@ background: url(http://static-p.iuqo.com/media/home/home/video/cloud.mp4) no-rep
 background-size: cover;
 } */
 /* _______________________________FEED BUTTONS______________________________ */
+button#like{
+  padding-top: -3vh;
+   border: none;
+ background-color: Transparent;
+  outline: none;
+    color: white;
+  font-size: 9vh;
+  
+}
+button#like:hover {
+  color: red;
+   border: none;
+ background-color: Transparent;
+  outline: none;
+    font-size: 9vh;
+}
+button#comment{
+  border: none;
+ background-color: Transparent;
+  outline: none;
+    color: white;
+  font-size: 4vh;
+  
+
+}
+button#comment:hover {
+  color: #A3A3C2;
+   border: none;
+ background-color: Transparent;
+  outline: none;
+    font-size: 4vh;
+}
+
+
 a.signoutbutton{
   color:white;
-  top:0px;
+  top:0vh;
   position: absolute;
-  right: 10px;
+  right: 1vw;
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
@@ -193,13 +219,17 @@ a.buttonmfst:hover{
   font-size: 3vh;
     font-family: 'Dosis', sans-serif;
 }
-
-
+p#pipe{
+ top:-0.7vh;
+  position: absolute;
+  left: 10.5vw;
+  font-size: 2vmax;
+}
 a.buttonme{
-  color:white;
+   color:white;
   top:0px;
   position: absolute;
-  left: 190~px;
+  left: 11.5vw;
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
@@ -213,17 +243,45 @@ a.buttonme:hover{
   font-size: 3vh;
     font-family: 'Dosis', sans-serif;
 }
+a.buttonreturn{
+    color:white;
+  top:0px;
+  position: absolute;
+  left: 14.5vw;
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+  font-family: 'Advent Pro', sans-serif;
+  transition:color 3s, font-size 3s;
+  font-size: 3vh;
+  font-family: 'Dosis', sans-serif;
+}
+a.buttonreturn:hover{
+   color: #8ABDCB;
+  text-decoration: none;
+  font-size: 3vh;
+    font-family: 'Dosis', sans-serif;
+}
+
+p#pipe2{
+ top:-0.7vh;
+  position: absolute;
+  left: 13.5vw;
+  font-size: 2vmax;
+}
+
 
 
 div.feedcenter{
   float: center;
   text-align:center;
+
  
  
 }
 
 h6#mfstwords{
-  font-size: 9vh;
+  font-size: 6vh;
+  padding-bottom: 0vh;
 }
 
 /* _______________________________________LOGIN____________________________________________________ */
@@ -247,7 +305,7 @@ border-radius: 5vh;
   color: #ffffff;
   font-size: 4vh;
 /*   line-height: 5vh; */
-/*   padding: 1vh ; */
+  padding: 1vh ;
   text-decoration: none;
   text-shadow: none;
   border-radius: 2vh;
@@ -256,7 +314,7 @@ border-radius: 5vh;
   display: block;
   width: 15vw;
   margin: 0 auto;
-  float:center;
+
 }
 
 .btn:hover {
@@ -275,11 +333,12 @@ h1.logintext{
 }
 
 div.login-button {
-  text-align:center;
-  float:center;
+
+
   padding-top:5vh;
   width: 13.5vw;
-  padding-left: 10vw;
+  padding-left: 30%;
+  padding-right: 0vw;
 
 
   
@@ -298,4 +357,27 @@ color:#80B2FF;
 }
 h5.signupline{
   font-size:1.5vmax;
+}
+
+/* _____________________________________ABOUT______________________________________________________ */
+a#about{
+  color:white;
+  top:0px;
+  position: absolute;
+  right: 9vw;
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+  font-family: 'Advent Pro', sans-serif;
+  transition:color 3s, font-size 3s;
+  font-size: 3vh;
+  font-family: 'Dosis', sans-serif;
+}
+a#about:hover{
+   color: #8ABDCB;
+  text-decoration: none;
+  font-size: 3vh;
+    font-family: 'Dosis', sans-serif;
+}
+h1#about{
+  text-align:center;
 }
