@@ -2,19 +2,17 @@
 <html>
  <head>
 <link rel="stylesheet" href="./css/style.css">
-  <title>My Manifestations</title>
+  <title>My (secret) Profile</title>
  </head>
  <body>
-  <form action="/signout" method="GET">
-     <%if session[:user_id] != nil%>
-     <a class="buttonso" href="/signout">Sign Out</a>
-     <%puts "signout"%>
-     <%else%>
-     <a class="buttonso" href="/login">Login</a>
-     <%puts "login"%>
-     <%end%>
-     
-    
-  </form>
+
+   <%Mfst.where(user_id: session[:user_id]).find_each do |x|%>
+   <%=x.content%>
+   <%=Comment.where(mfst_id: x.id)%>
+   <%end%>
+   
+   
+   
+   
  </body>
 </html>

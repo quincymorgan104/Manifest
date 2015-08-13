@@ -2,6 +2,7 @@ require "./config/environment"
 require "./app/models/mfst"
 require "./app/models/user"
 require "./app/models/like"
+require "./app/models/comment"
 
 class ApplicationController < Sinatra::Base
   configure do
@@ -142,6 +143,20 @@ class ApplicationController < Sinatra::Base
     @mfst_id = params[:mfstid]
     erb :comment
   end
+  
+  post '/comment' do
+    @comment = Comment.new(:content => params[:content], :mfst_id => params[:mfst_id])
+    @comment.save
+    puts "this is code"
+    redirect '/feed'
+  end
+  
+  get '/me' do
+    erb :me
+  end
+  
+  
+  
   
   
 end
