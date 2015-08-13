@@ -111,7 +111,7 @@ class ApplicationController < Sinatra::Base
   
   #end of signout requests
 #----------------------------------------------------------------------------------------------------------------------------------------------------
-  
+  #like mfst requests start here
   
   get '/like/:mfstid' do
 
@@ -133,7 +133,16 @@ class ApplicationController < Sinatra::Base
   end
   
   
+  #end of like requests
+#----------------------------------------------------------------------------------------------------------------------------------------------------
+  #comment requests start here
   
+  
+  get '/comment/:mfstid' do
+    
+    
+    
+  end
   
   
 end
