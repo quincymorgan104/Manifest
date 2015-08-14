@@ -1,9 +1,9 @@
 <a class="buttonreturn" id="newmfst" href="/">Return</a>
 
-
-<%=@mfst.content%>
 <br>
-<%@comments.each do |comment|%>
+<h1 class="post"><%=@mfst.content%></h1>
+<br>
+<h2 class="post"><%@comments.each do |comment|%></h2>
 <%=comment.content%>
 <br>
 <%end%>

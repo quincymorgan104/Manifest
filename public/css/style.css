@@ -499,3 +499,10 @@ div.feedme{
 div.grey{
   color:grey;
 }
+/* _____________________________________POST_______________________________________ */
+h1.post{
+  font-size: 5vmax;
+}
+h2.post{
+  font-size: 3vmax;
+}
