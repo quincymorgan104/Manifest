@@ -229,6 +229,7 @@ p#pipe{
 }
 div.nav{
   width: 100%;
+  left:1vw;
   text-align:left;
   font-size 2vmax
 }
