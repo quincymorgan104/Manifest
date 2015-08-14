@@ -62,7 +62,7 @@ p.footer{
   bottom: 0px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1vmax;
-  padding-top: 5px;
+  padding-top: 20vh;
 
  
 }
@@ -364,7 +364,7 @@ a#about{
   color:white;
   top:0px;
   position: absolute;
-  right: 9vw;
+  right: 6vw;
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
@@ -380,4 +380,9 @@ a#about:hover{
 }
 h1#about{
   text-align:center;
+ font-size:7vmax
+}
+p#about{
+   text-align:center;
+  font-size:2vmax
 }
