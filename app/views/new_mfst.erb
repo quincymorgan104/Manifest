@@ -7,15 +7,16 @@
  <body>
     <form action="/signout" method="GET">
      <%if session[:user_id] != nil%>
-     <a class="buttonso" href="/signout">Sign Out</a>
+     <a class="signoutbutton" href="/signout">Sign Out</a>
      <%puts "signout"%>
      <%else%>
-     <a class="buttonso" href="/login">Login</a>
+     <a class="signoutbutton" href="/login">Login</a>
      <%puts "login"%>
      <%end%>
      
     
   </form>
+   <div class="words">
    <form action="/feed" method="post">
     
       
@@ -27,6 +28,7 @@
 
        
     </form>
+    </div>
   
  </body>
 </html>

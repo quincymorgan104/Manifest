@@ -205,7 +205,7 @@ a.buttonmfst{
    color:white;
   top:0px;
   position: absolute;
-  left: 10px;
+  left: 1vw;
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
@@ -388,3 +388,48 @@ p#about{
    text-align:center;
   font-size:2vmax
 }
+a.buttonreturnlogin{
+    color:white;
+  top:0px;
+  position: absolute;
+  left:;
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+  font-family: 'Advent Pro', sans-serif;
+  transition:color 3s, font-size 3s;
+  font-size: 3vh;
+  font-family: 'Dosis', sans-serif;
+}
+a.buttonreturnlogin:hover{
+   color: #8ABDCB;
+  text-decoration: none;
+  font-size: 3vh;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* _____________________________COMMENTS_____________________________________________ */
+h1#comment{
+  font-size:10vmax;
+}
+textarea#conetnt{
+   border-radius: 2vh;
+  
+}
+div.comment{
+  text-align:center;
+}
+input.sb{
+  padding-top: -3vh;
+   border: none;
+ background-color: Transparent;
+  outline: none;
+    color: white;
+  font-size: 9vh;
+  
+}
+input.sb:hover {
+  color: grey;
+   border: none;
+ background-color: Transparent;
+  outline: none;
+    font-size: 9vh;

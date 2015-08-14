@@ -19,7 +19,7 @@
    <h1 class="feed"> Manifestations</h1>
       <% @mfsts.each do|mfst|%>
   <div class ="mfst_words">
-    <a href="/post/<%=mfst.id%>"><h6 id="mfstwords"> <%=mfst.content%>  </h6>          <h6 id="like">   <%=mfst.num_likes%> likes</h6></a>
+    <h6 id="mfstwords"> <%=mfst.content%>  </h6>          <h6 id="like">   <%=mfst.num_likes%> likes</h6>
     
 
    <a href="/comment/<%=mfst.id%>"><button id="comment" type="button" class="button">comment</button></a>
