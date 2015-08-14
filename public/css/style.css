@@ -290,9 +290,7 @@ h6#mfstwords{
 }
 
 /* _______________________________________LOGIN____________________________________________________ */
-a#about2{
-left:1vw;
-}
+
 a#join{
   left: 1vw;
 }
@@ -379,7 +377,7 @@ a#about{
   color:white;
   top:0px;
   position: absolute;
-  right: 6vw;
+ 
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
