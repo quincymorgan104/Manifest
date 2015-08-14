@@ -8,6 +8,7 @@ html, body{
   color: white;
   font-family: 'Dosis', sans-serif;
   background-color:#80B2FF;
+  text-align:center;
  
 
 }
@@ -467,4 +468,19 @@ input.sb:hover {
 }
 input#newmfst{
   font-size: 4vmax;
+}
+/* ______________________________________________ME____________________________________________ */
+a#me{
+  left: 1vw;
+}
+
+div.me{
+  text-align:center;
+  
+}
+h1.me{
+  font-size:10vmax;
+}
+div.feedme{
+  font-size:5vmax;
 }

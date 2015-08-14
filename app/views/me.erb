@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html>
- <head>
-<link rel="stylesheet" href="./css/style.css">
-  <title>My (secret) Profile</title>
-   <h1>Your Profile</h1>
-   <h4>A page only you can see</h4>
- </head>
- <body>
 
-   <%Mfst.where(user_id: session[:user_id]).find_each do |x|%>
+<link rel="stylesheet" href="./css/style.css">
+<a class="buttonreturn" id="me" href="/">Return</a>
+
+  <title>My (secret) Profile</title>
+<div class="me">
+   <h1 class="me">Your Profile</h1>
+   <h4>A page only you can see</h4>
+
+
+   <div class="feedme">
+     <%Mfst.where(user_id: session[:user_id]).find_each do |x|%>
    <%=x.content%>
    <br>
    <%Comment.where(mfst_id: x.id).find_each do |y|%>
    <%=y.content%>
    <%end%>
    <%end%>
+</div>
+</div>
+
    
    
    
    
- </body>
-</html>
