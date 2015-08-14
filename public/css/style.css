@@ -97,7 +97,7 @@ a{
   color: white;
   text-decoration: none;
   transition:color 3s, font-size 3s;
-  font-size: 4vh;
+  font-size: 2.5vmax;
   font-family: 'Dosis', sans-serif;
   
 }
@@ -205,9 +205,9 @@ a.signoutbutton:hover{
 }
 a.buttonmfst{
    color:white;
-  top:0px;
-  position: absolute;
-  left: 1vw;
+
+
+/*   left: 1vw; */
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
@@ -222,16 +222,21 @@ a.buttonmfst:hover{
     font-family: 'Dosis', sans-serif;
 }
 p#pipe{
- top:-0.7vh;
-  position: absolute;
-  left: 10.5vw;
+
+
+
   font-size: 2vmax;
+}
+div.nav{
+  width: 100%;
+  text-align:left;
+  font-size 2vmax
 }
 a.buttonme{
    color:white;
-  top:0px;
-  position: absolute;
-  left: 11.5vw;
+
+ 
+/*  left: 11.5vw; */
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
@@ -247,9 +252,9 @@ a.buttonme:hover{
 }
 a.buttonreturn{
     color:white;
-  top:0px;
-  position: absolute;
-  left: 14.5vw;
+
+ 
+/*   left: 14.5vw; */
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
   font-family: 'Advent Pro', sans-serif;
@@ -265,9 +270,6 @@ a.buttonreturn:hover{
 }
 
 p#pipe2{
- top:-0.7vh;
-  position: absolute;
-  left: 13.5vw;
   font-size: 2vmax;
 }
 
@@ -287,7 +289,15 @@ h6#mfstwords{
 }
 
 /* _______________________________________LOGIN____________________________________________________ */
-
+a#about2{
+left:1vw;
+}
+a#join{
+  left: 1vw;
+}
+a#login{
+  left: 1vw;
+}
 .login-screen {
   color: #858585;
 background-color: #FFF;
