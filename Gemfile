@@ -8,9 +8,9 @@ gem "rake"
 gem "mailgun"
 gem "bcrypt"
 gem "pg"
+gem "tux"
 
 group :development do
   gem "pry"
-  gem "tux"
   gem "sqlite3"
 end
