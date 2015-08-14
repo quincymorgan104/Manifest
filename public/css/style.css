@@ -336,9 +336,11 @@ div.login-button {
 
 
   padding-top:5vh;
-  width: 13.5vw;
-  padding-left: 30%;
-  padding-right: 0vw;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+/*   padding-left: 40%; */
+/*   padding-right: 0vw; */
 
 
   
@@ -346,14 +348,10 @@ div.login-button {
 input#email{
   width: 13vw;
   height: 8vh;
-
-  font-size: 6vh;
-}
-
   font-size: 2vmax;
 }
 a.join{
-  color:#858585;
+  color: grey;
   font-size:1.5vmax;
 }
 a.join:hover{
@@ -363,8 +361,6 @@ h5.signupline{
   font-size:1.5vmax;
 }
 
-<<<<<<< HEAD
-=======
 /* _____________________________________ABOUT______________________________________________________ */
 a#about{
   color:white;
@@ -392,4 +388,3 @@ p#about{
    text-align:center;
   font-size:2vmax
 }
->>>>>>> c29eba2454d72be20a4902c965366849db47f5e7
