@@ -6,7 +6,7 @@ require "./app/models/comment"
 
 class ApplicationController < Sinatra::Base
   configure do
-    set :public_folder, 'app/public'
+    set :public_folder, '/app/public'
     set :views, 'app/views'
     enable :sessions
     set :session_secret, 'manifestation'
