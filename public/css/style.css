@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,500,600);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-html, body{
+html,body{
   height: 100%;
   padding:0;
   margin:0;
@@ -12,10 +12,11 @@ html, body{
  
 
 }
+
 div.body {
    height: 100% !important;
    margin:0;
-  background-color: white no-repeat center center fixed;
+  background-image: url(/images/"clouds-1".jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

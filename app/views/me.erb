@@ -9,8 +9,9 @@
 
 
    <div class="feedme">
-     <%Mfst.where(user_id: session[:user_id]).find_each do |x|%>
+     <div class="wordsme"><%Mfst.where(user_id: session[:user_id]).find_each do |x|%>
    <%=x.content%>
+     </div>
    <br>
    <%Comment.where(mfst_id: x.id).find_each do |y|%>
    <%=y.content%>
