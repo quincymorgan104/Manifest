@@ -408,6 +408,9 @@ a.buttonreturnlogin:hover{
 }
 
 /* _____________________________COMMENTS_____________________________________________ */
+a#newmfst{
+  left:1vw;
+}
 h1#comment{
   font-size:10vmax;
 }
@@ -433,3 +436,35 @@ input.sb:hover {
  background-color: Transparent;
   outline: none;
     font-size: 9vh;
+}
+/* _______________________________________NEWMFST________________________________________? */
+div#newmfst{
+  font-size:5vmax;
+}
+h1#newmfst{
+  font-size:10vmax;
+
+}
+div.words{
+ 
+  text-align:center;
+}
+input.sb{
+  padding-top: -3vh;
+   border: none;
+ background-color: Transparent;
+  outline: none;
+    color: white;
+  font-size: 9vh;
+  
+}
+input.sb:hover {
+  color: grey;
+   border: none;
+ background-color: Transparent;
+  outline: none;
+    font-size: 9vh;
+}
+input#newmfst{
+  font-size: 4vmax;
+}
