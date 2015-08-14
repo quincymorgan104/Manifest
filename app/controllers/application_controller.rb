@@ -156,7 +156,7 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/post/:mfstid'do
-    @mfst = Mfst.find_by(:id = params[:mfstid])
+    @mfst = Mfst.find_by(:id => params[:mfstid])
     @comments = []
     Comment.where(mfst_id: params[:mfstid]).find_each do |x|
       @comments.push(x)
