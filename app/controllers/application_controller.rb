@@ -63,7 +63,6 @@ class ApplicationController < Sinatra::Base
     @error = ""
     if !user.valid?
       @error="email is already taken, please try another"
-      puts "error stuff"
       erb :join
     else
       user.save
@@ -115,20 +114,24 @@ class ApplicationController < Sinatra::Base
   #like mfst requests start here
   
   get '/like/:mfstid' do
-
-    @mfst = Mfst.find_by(:id => params[:mfstid])
     
-    if !Like.find_by(:user_id => session[:user_id])
-      @like = Like.new(:user_id => session[:user_id], :mfst_id => params[:mfstid])
-      @like.save
-      @mfst.num_likes += 1
-      @mfst.save
-      redirect '/feed'
+    if session[:user_id] != nil
+      @mfst = Mfst.find_by(:id => params[:mfstid])    
+      if !Like.find_by(:user_id => session[:user_id])
+        @like = Like.new(:user_id => session[:user_id], :mfst_id => params[:mfstid])
+        @like.save
+        @mfst.num_likes += 1
+        @mfst.save
+        redirect '/feed'
+      else
+        @like = Like.find_by(:user_id => session[:user_id])
+        @like.destroy
+        @mfst.num_likes -= 1
+        @mfst.save
+        redirect '/feed'
+      end
     else
-      @like = Like.find_by(:user_id => session[:user_id])
-      @like.destroy
-      @mfst.num_likes -= 1
-      @mfst.save
+      @error = "You need to login in order to like a post"
       redirect '/feed'
     end
   end
@@ -140,20 +143,32 @@ class ApplicationController < Sinatra::Base
   
   
   get '/comment/:mfstid' do
-    @mfst_id = params[:mfstid]
-    erb :comment
+    if session[:user_id] != nil
+      @mfst_id = params[:mfstid]
+      erb :comment
+    else
+      @error = "You need to login in order to comment"
+      redirect '/feed'
+    end
   end
   
   post '/comment' do
     @comment = Comment.new(:content => params[:content], :mfst_id => params[:mfst_id])
     @comment.save
-    puts "this is code"
     redirect '/feed'
   end
+  
+  #end of comment requests
+#----------------------------------------------------------------------------------------------------------------------------------------------------
+  #profile requests start here
   
   get '/me' do
     erb :me
   end
+  
+  #end of profile requests
+#----------------------------------------------------------------------------------------------------------------------------------------------------
+  #post page requests start here    
   
   get '/post/:mfstid'do
     @mfst = Mfst.find_by(:id => params[:mfstid])
@@ -164,6 +179,8 @@ class ApplicationController < Sinatra::Base
     erb :post
   end
   
+  #end of post page requests
+#----------------------------------------------------------------------------------------------------------------------------------------------------
   
   
 end
