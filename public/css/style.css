@@ -346,6 +346,10 @@ div.login-button {
 input#email{
   width: 13vw;
   height: 8vh;
+
+  font-size: 6vh;
+}
+
   font-size: 2vmax;
 }
 a.join{
@@ -359,6 +363,8 @@ h5.signupline{
   font-size:1.5vmax;
 }
 
+<<<<<<< HEAD
+=======
 /* _____________________________________ABOUT______________________________________________________ */
 a#about{
   color:white;
@@ -386,3 +392,4 @@ p#about{
    text-align:center;
   font-size:2vmax
 }
+>>>>>>> c29eba2454d72be20a4902c965366849db47f5e7
