@@ -442,16 +442,17 @@ input.sb:hover {
 /* _______________________________________NEWMFST________________________________________? */
 div#newmfst{
   font-size:5vmax;
+  color:grey;
 }
 h1#newmfst{
-  font-size:10vmax;
+  font-size:7vmax;
 
 }
 div.words{
  
   text-align:center;
 }
-input.sb{
+input#sb{
   padding-top: -3vh;
    border: none;
  background-color: Transparent;
@@ -460,7 +461,7 @@ input.sb{
   font-size: 9vh;
   
 }
-input.sb:hover {
+input#sb:hover {
   color: grey;
    border: none;
  background-color: Transparent;
@@ -469,6 +470,7 @@ input.sb:hover {
 }
 input#newmfst{
   font-size: 4vmax;
+  color:grey;
 }
 /* ______________________________________________ME____________________________________________ */
 a#me{
@@ -484,4 +486,7 @@ h1.me{
 }
 div.feedme{
   font-size:5vmax;
+}
+div.grey{
+  color:grey;
 }
